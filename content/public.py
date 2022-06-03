@@ -2,10 +2,12 @@ from flask_restful import Resource
 
 
 class Public(Resource):
-    def __init__(self):
-        pass
+    content = ""
 
-    def get(self):
+    def __init__(self, content):
+        self.content = content
+
+    def get(self, crumb):
         return {
-            "data": "Hello World!"
+            "data": crumb
         }
