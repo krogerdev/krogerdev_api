@@ -1,3 +1,6 @@
 # Flask requirements
 flask
 flask-restful
+
+# Database requirements
+psycopg2-binary

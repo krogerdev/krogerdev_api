@@ -1,11 +1,6 @@
-# TODO: Tutorial I'm following: https://morioh.com/p/1d2afc550822
-# Required imports
-import os
+from app import createapp
 
-
-
-config_name = os.getenv('APP_SETTINGS')
-app = create_app(config_name)
+app = createapp()
 
 if __name__ == '__main__':
     app.run()
